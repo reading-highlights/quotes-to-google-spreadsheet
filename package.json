@@ -1,0 +1,28 @@
+{
+  "name": "quotes-to-google-spreadsheet",
+  "version": "1.0.0",
+  "description": "AWS Lambda function that accepts SNS messages representing quotes I've highlighted and saves them to a Google Spreadsheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "zip -r lambda-code.zip index.js config.json node_modules; echo \"*** Now upload lambda-code.zip to AWS Lambda\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "asd"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "sns",
+    "quote",
+    "reading",
+    "spreadsheet"
+  ],
+  "author": "Chris Castle",
+  "license": "ISC",
+  "dependencies": {
+    "google-spreadsheet": "^1.1.3",
+    "hasha": "^2.2.0"
+  }
+}
