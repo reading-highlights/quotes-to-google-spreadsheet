@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "asd"
+    "url": "git@github.com:reading-highlights/quotes-to-google-spreadsheet.git"
   },
   "keywords": [
     "aws",
