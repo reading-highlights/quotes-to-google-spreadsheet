@@ -31,7 +31,7 @@ exports.handler = function(event, context) {
       // Check if new highlight already exists in spreadsheet
       for (var i = 0; i < cells.length; i++) {
         if (newHash == cells[i].value) {
-          console.log('Skipping highlight already in spreadsheet.')
+          console.log('Skipping highlight already in spreadsheet.');
           return context.succeed();
         }
       }
@@ -46,7 +46,8 @@ exports.handler = function(event, context) {
         postauthor: e.post.author.name,
         postauthorlink: e.post.author.link,
         postsitelink: e.post.siteLink,
-        unixtimeutc: e.createdAt
+        unixtimeutc: e.createdAt,
+        annotation: e.annotation
       };
       spreadsheet.addRow(1, newRow, function(err) {
         if (err) {
